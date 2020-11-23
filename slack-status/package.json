@@ -1,0 +1,21 @@
+{
+  "name": "slack-status",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "./bin/launch.js"
+  },
+  "bin": {
+    "slack-status": "bin/launch.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.7",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7"
+  }
+}
