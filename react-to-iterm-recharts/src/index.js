@@ -3,8 +3,8 @@ import React from "react";
 import puppeteer from "puppeteer";
 
 import {
-  BarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -58,9 +58,9 @@ const data = [
 ];
 
 const App = () => (
-  <BarChart
-    width={500}
-    height={300}
+  <LineChart
+    width={1000}
+    height={600}
     data={data}
     margin={{
       top: 5,
@@ -69,14 +69,20 @@ const App = () => (
       bottom: 5,
     }}
   >
-    <CartesianGrid strokeDasharray="3 3" />
+    <CartesianGrid fill="rgba(255,255,255,0.7)" strokeDasharray="3 3" />
     <XAxis dataKey="name" />
     <YAxis />
     <Tooltip />
     <Legend />
-    <Bar dataKey="pv" fill="#8884d8" />
-    <Bar dataKey="uv" fill="#82ca9d" />
-  </BarChart>
+    <Line
+      strokeWidth="5"
+      stroke="red"
+      type="monotone"
+      dataKey="pv"
+      fill="#8884d8"
+    />
+    <Line strokeWidth="5" type="monotone" dataKey="uv" fill="#82ca9d" />
+  </LineChart>
 );
 
 const styles = `body {
@@ -103,6 +109,8 @@ const renderToPuppeteer = async (app, { styles }) => {
     type: "png",
     path: "/dev/stdout",
     omitBackground: true,
+    width: 600,
+    height: 600,
   });
 
   await browser.close();

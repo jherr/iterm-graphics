@@ -1,0 +1,25 @@
+{
+  "name": "react-to-iterm",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "./bin/launch.js"
+  },
+  "bin": {
+    "react-to-iterm": "bin/launch.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^5.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-vis": "^1.11.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.7",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7"
+  }
+}

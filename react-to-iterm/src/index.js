@@ -10,8 +10,26 @@ const styles = `body {
 const App = () => (
   <>
     <h1>Your React App</h1>
-    <svg width="300" height="300">
-      <circle cx="150" cy="150" r="10" fill="blue" />
+    <svg width="600" height="600" viewBox="0 0 100 100">
+      <rect
+        x="10"
+        y="10"
+        width="80"
+        height="80"
+        rx="5"
+        fill="rgba(255,255,255,0.1)"
+      />
+      <rect
+        x="12"
+        y="12"
+        width="76"
+        height="76"
+        rx="5"
+        fill="rgba(255,255,255,0.2)"
+      />
+      <text x="20" y="30" fill="white" style={{ fontSize: "9pt" }}>
+        This is cool
+      </text>
     </svg>
   </>
 );
@@ -35,6 +53,8 @@ const renderToPuppeteer = async (app, { styles }) => {
     type: "png",
     path: "/dev/stdout",
     omitBackground: true,
+    width: 600,
+    height: 600,
   });
 
   await browser.close();
