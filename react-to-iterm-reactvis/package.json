@@ -5,7 +5,7 @@
     "start": "./bin/launch.js"
   },
   "bin": {
-    "react-to-iterm": "bin/launch.js"
+    "react-to-iterm-reactvis": "bin/launch.js"
   },
   "license": "MIT",
   "dependencies": {
