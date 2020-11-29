@@ -50,7 +50,7 @@ const renderToPuppeteer = async (app, { styles }) => {};
 
 (async () => {
   const resp = await fetch(
-    "https://raw.githubusercontent.com/jherr/sixel-graphics/master/react-to-sixel-recharts/data.json"
+    "https://raw.githubusercontent.com/jherr/iterm-graphics/master/react-to-sixel-recharts/data.json"
   );
   const data = await resp.json();
 
