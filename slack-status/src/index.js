@@ -4,6 +4,7 @@ import puppeteer from "puppeteer";
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto("https://status.slack.com/");
+  await page.waitForTimeout(2000);
   const element = await page.$("#services");
   await element.screenshot({
     type: "png",
