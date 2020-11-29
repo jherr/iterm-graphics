@@ -1,5 +1,5 @@
 {
-  "name": "react-to-iterm",
+  "name": "react-to-sixel",
   "scripts": {
     "build": "babel src --out-dir dist",
     "start": "./bin/launch.js"

@@ -1,18 +1,19 @@
 {
-  "name": "react-to-iterm",
+  "name": "react-to-sixel-graph",
   "scripts": {
     "build": "babel src --out-dir dist",
     "start": "./bin/launch.js"
   },
   "bin": {
-    "react-to-iterm-reactvis": "bin/launch.js"
+    "react-to-sixel-recharts": "./bin/launch.js"
   },
   "license": "MIT",
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "puppeteer": "^5.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-vis": "^1.11.7"
+    "recharts": "^1.8.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",

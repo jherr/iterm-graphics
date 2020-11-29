@@ -27,8 +27,8 @@ The examples are listed below:
 
 | Name | Description |
 |------|-------------|
-| react-to-iterm | A very simple example using React |
-| react-to-iterm-reactvis | A graphing example using React and react-vis |
-| react-to-iterm-recharts | A graphing example using React and recharts |
+| react-to-sixel | A very simple example using React |
+| react-to-sixel-reactvis | A graphing example using React and react-vis |
+| react-to-sixel-recharts | A graphing example using React and recharts |
 | slack-status | An example of getting content from a web page and displaying it |
 | thought-bubbles | Is a simple static HTML display |
