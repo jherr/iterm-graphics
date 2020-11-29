@@ -29,6 +29,6 @@ The examples are listed below:
 |------|-------------|
 | react-to-sixel | A very simple example using React |
 | react-to-sixel-reactvis | A graphing example using React and react-vis |
-| react-to-sixel-recharts | A graphing example using React and recharts |
+| react-to-sixel-recharts | A graphing example using React and recharts with data fetching |
 | slack-status | An example of getting content from a web page and displaying it |
 | thought-bubbles | Is a simple static HTML display |
